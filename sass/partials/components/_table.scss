@@ -1,0 +1,49 @@
+//////////////////////////////
+// Table Components
+//
+// The partial and folder structure for this components should be as follows:
+// _table.scss
+// table (folder)
+//   _extends.scss
+//   _mixins.scss
+//   _variables.scss
+//
+// Automatic Sass parsing is done through special comment blocks
+//  - Start styling block for base components: @{components}
+//  - End styling block for base components:   {components}@
+//
+//  - Start styling block for specific components aspect: @{components--aspect}
+//  - End styling block for specific components aspect:   {components--aspect}@
+//////////////////////////////
+
+@import "table/variables";
+@import "table/mixins";
+@import "table/extends";
+
+//////////////////////////////
+// @{table}
+// Styling for Table Components
+
+.table--MAIN{
+  @extend %table--MAIN;
+}
+
+.table--header-row{
+  @extend %table--header-row;
+}
+
+
+.table--header{
+  @extend %table--header;
+}
+
+.table--row-label{
+  @extend %table--row-label;
+}
+
+.table--item{
+  @extend %table--item;
+}
+
+// {table}@
+//////////////////////////////
