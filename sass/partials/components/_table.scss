@@ -25,7 +25,7 @@
 // Styling for Table Components
 
 .table--MAIN{
-  @extend %table--main !optional;
+  @extend %table--MAIN;
 }
 
 .table--header-row{
